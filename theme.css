@@ -1,81 +1,195 @@
+/* Import Roboto Font */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face { /* Add bold version if used, or browser will faux-bold */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.ttf) format('truetype'); /* Example URL for bold */
+}
+
+
+/* Base Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    background-color: #fff;
-    line-height: 1.6;
-}
-
-p {
-    margin: 0px;
-}
-
-a {
-    color: #0067cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3a3f44; /* Slightly softer than pure black */
+    background-color: #f4f7f6; /* Light gray background */
+    margin: 0;
+    padding: 0;
 }
 
 .content {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 90%;
+    max-width: 900px; /* Optimal reading width */
+    margin: 20px auto;
+    padding: 25px 35px; /* More padding */
+    background-color: #ffffff; /* White content area */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Softer shadow */
+    border-radius: 8px;
+    padding-top: 100px; /* Account for fixed header height + some space */
 }
 
-header {
-    background: #f4f4f4;
-    color: #333;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #2c3e50; /* Dark blue-grey for headings */
+    line-height: 1.3;
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
 }
 
+h1 {
+    font-size: 2.2em; /* Was 26pt or 20pt */
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #e9ecef; /* Lighter border */
+}
 
-header a {
+h2 {
+    font-size: 1.8em; /* Was 16pt */
+    margin-top: 2em;
+}
+
+h3 {
+    font-size: 1.5em; /* Was 14pt */
+    color: #34495e; /* Slightly lighter than h2 */
+    margin-top: 1.8em;
+}
+
+h4 {
+    font-size: 1.25em; /* Was 12pt */
+    color: #7f8c8d; /* Grey for less emphasis */
+}
+
+h5 {
+    font-size: 1.1em; /* Was 11pt */
+    color: #7f8c8d;
+}
+
+h6 {
+    font-size: 1em; /* Was 11pt */
+    color: #95a5a6; /* Even lighter grey */
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 1.25em;
+    color: #555e67;
+}
+
+a {
+    color: #007bff; /* Standard, vibrant blue */
     text-decoration: none;
-    margin: 0 15px;
-    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
 }
 
-@media (max-width: 700px) {
-    .content {
-        width: 95%;
-    }
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: 700; /* Ensure bold is applied if Roboto bold is loaded */
+}
+
+/* Specific Text Styles from original inline styles */
+.text-main-color { /* General content text */
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1em; /* Approx 14PT relative to 16px base */
+    color: #595959;
+}
+
+.text-blue-strong {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.2em; /* Approx 16PT */
+    color: #4a86e8;
+    font-weight: bold; /* Will use 700 weight */
+}
+
+.note-italic {
+    font-style: italic;
+    color: #6c757d; /* Bootstrap's muted color */
+    font-size: 0.9em;
+    margin: 1em 0;
+    display: block; /* Make it a block for better spacing */
+}
+
+/* Prompt Blocks */
+.prompt-block {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #f8f9fa; /* Light text for dark background */
+    background-color: #2c3e50; /* Dark slate blue */
+    padding: 15px 20px;
+    margin: 1.5em 0;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #34495e; /* Subtle border */
+}
+.prompt-block img.image-inline {
+    border: 1px solid #4a5568; /* Border for images inside dark prompt block */
 }
 
 
-footer {
-    background: #f4f4f4;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
+/* Substep Explanation Box */
+.substep-explanation {
+    background-color: #e9ecef; /* Light grey, Bootstrap's light bg */
+    padding: 15px 20px;
+    margin: 1.5em 0;
+    border-radius: 6px;
+    border: 1px solid #dee2e6; /* Bootstrap's border color */
+    font-size: 0.95em;
 }
-
-.hamburger-menu span {
-    background-color: #333;
+.substep-explanation p {
+    margin-bottom: 0.5em;
 }
-header {
-    padding: 1em 0;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.substep-explanation ul {
     padding-left: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.substep-explanation li {
+    margin-bottom: 0.3em;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    color: #333;
+    padding: 0.8em 25px; /* Adjusted padding */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07); /* Slightly more pronounced shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header a {
-    text-decoration: none;
+.site-title-container {
+    /* Container for site title if needed for more complex layouts */
+}
+
+a.site-title-link {
+    font-size: 1.4em;
     font-weight: bold;
-    margin-left: 15px;
+    color: #2c3e50;
+    text-decoration: none;
 }
-
-.content {
-    padding: 50px 20px;
+a.site-title-link:hover {
+    color: #1a252f;
+    text-decoration: none;
 }
 
 header nav ul {
@@ -87,91 +201,175 @@ header nav ul {
 
 header nav ul li {
     position: relative;
+    margin-left: 20px; /* Space between nav items */
 }
 
-header nav ul li ul.submenu {
-    display: none;
-    position: absolute;
-    left: 0;
-    min-width: 150px;
+header nav ul li a {
+    text-decoration: none;
+    color: #555e67;
+    font-weight: 500; /* Medium weight */
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-@media (min-width: 769px) {
-    header nav ul li:hover .submenu {
-        display: block;
-    }
+header nav ul li a:hover {
+    color: #007bff;
+    background-color: #f0f8ff; /* Very light blue on hover */
+    text-decoration: none;
 }
 
-header nav ul li .submenu-toggle {
-    display: none;
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px; /* Slightly more rounded */
+    margin-top: 0.5em;
+    margin-bottom: 1em; /* More space after images */
+    display: block; /* Helps with margins */
 }
-header .hamburger-menu {
-    display: none;
+.image-inline {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0 0; /* Adjust spacing for inline images */
+    border-radius: 4px;
+}
+img[style*="float: left"] {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+/* Basic clearfix for containers with floated elements */
+div[style*="overflow: auto"]::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8em 0;
+    font-size: 0.95em; /* Slightly larger table font */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-radius: 6px; /* Rounded corners for the table */
+    overflow: hidden; /* To make border-radius work with th/td */
+}
+table th, table td {
+    border: 1px solid #dee2e6; /* Lighter border */
+    padding: 12px 15px; /* More padding */
+    text-align: left;
+    vertical-align: top;
+}
+table th {
+    background-color: #f8f9fa; /* Very light grey header */
+    font-weight: bold;
+    color: #343a40; /* Darker text for header */
+}
+table tr:nth-child(even) td { /* Apply to td for specificity */
+    background-color: #fdfdfe; /* Very subtle striping */
+}
+table.table-small-font {
+    font-size: 0.8em; /* For tables with tiny font */
+}
+table.table-small-font th, table.table-small-font td {
+    padding: 6px 8px;
+}
+
+
+/* Footer */
+footer {
+    background: #343a40; /* Dark grey, Bootstrap's dark color */
+    color: #adb5bd; /* Light grey text */
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+footer a {
+    color: #80bdff; /* Lighter blue for dark background */
+}
+footer a:hover {
+    color: #aaccff;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none; /* Hidden by default on larger screens */
     cursor: pointer;
     flex-direction: column;
     justify-content: space-around;
-    height: 30px;
+    height: 24px; /* Adjusted size */
     width: 30px;
-    margin-left: auto;
 }
-
 .hamburger-menu span {
     display: block;
     height: 3px;
     width: 100%;
+    background-color: #343a40; /* Darker for better visibility */
     border-radius: 3px;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    header .hamburger-menu {
-        padding: 0px;
-        display: flex;
-        margin-left: 0px;
+    .content {
+        width: 95%;
+        padding: 20px;
+        padding-top: 90px; /* Adjust for header */
     }
 
-    header a {
-        display: none;
+    header {
+        padding: 0.8em 15px;
     }
-
-    header.nav-active a {
-        display: block;
-        padding: 10px;
-        text-align: center;
+    
+    header nav {
+        display: none; /* Hide nav by default */
+        position: absolute;
+        top: 100%; /* Position below header */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 999; /* Below header but above content */
     }
-
-    header.nav-active {
-        flex-direction: column;
+    header.nav-active nav {
+        display: block; /* Show nav when active */
     }
-
     header nav ul {
-        display: none;
-        flex-direction: column;
+        flex-direction: column; /* Stack nav items vertically */
     }
-
-    header.nav-active nav ul {
-        display: flex;
-    }
-
-    header nav ul li .submenu-toggle {
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 5px;
-        cursor: pointer;
-    }
-
-    header nav ul li ul.submenu {
-        display: none;
-        position: static;
-        flex-direction: column;
-    }
-
-    header nav ul li.submenu-active ul.submenu {
-        display: block;
-    }
-
     header nav ul li {
-        display: flex;
-        align-items: center;
+        margin-left: 0;
+        width: 100%;
     }
-}
+    header nav ul li a {
+        display: block;
+        padding: 12px 20px;
+        border-bottom: 1px solid #e9ecef; /* Separator for mobile nav items */
+        border-radius: 0;
+    }
+    header nav ul li:last-child a {
+        border-bottom: none;
+    }
 
+    .hamburger-menu {
+        display: flex; /* Show hamburger on small screens */
+    }
+    
+    /* Hamburger animation (optional) */
+    header.nav-active .hamburger-menu span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    header.nav-active .hamburger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+    header.nav-active .hamburger-menu span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.3em; }
+}

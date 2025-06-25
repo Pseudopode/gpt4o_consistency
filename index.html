@@ -2,79 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>How do you create consistent stories in images with GPT4o </title>
+    <title>Consistent Image Storytelling with GPT-4o</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="How do you create consistent stories in images with GPT4o ?  GPT4o can now generate pretty good images when given proper instructions. However, it’s still hard to get consistent images between successives generations.  If you need continuity between different images, either in the same chat, or in different windows, here’s a tutorial to get good consistency across different ">
+    <meta name="description" content="Learn how to create consistent stories in images with GPT-4o. This tutorial covers storyboard generation, mood boards, character sheets, and image generation techniques for maintaining continuity.">
     <link rel="stylesheet" href="theme.css">
-    <style>
-    
-@font-face {   font-family: 'Roboto';   font-style: normal;   font-weight: 400;   font-display: swap;   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype'); } 
-.normal_text {
-font-family: Arial;
-font-size: 11.0PT;
-color: #000000;
-line-height: 1.15;
-direction: ltr;
-}
-h1 {
-font-size: 20.0PT;
-padding-top: 20.0PT;
-padding-bottom: 6.0PT;
-direction: ltr;
-}
-h2 {
-font-size: 16.0PT;
-padding-top: 18.0PT;
-padding-bottom: 6.0PT;
-direction: ltr;
-}
-h3 {
-font-size: 14.0PT;
-color: #434343;
-padding-top: 16.0PT;
-padding-bottom: 4.0PT;
-direction: ltr;
-}
-h4 {
-font-size: 12.0PT;
-color: #666666;
-padding-top: 14.0PT;
-padding-bottom: 4.0PT;
-direction: ltr;
-}
-h5 {
-font-size: 11.0PT;
-color: #666666;
-padding-top: 12.0PT;
-padding-bottom: 4.0PT;
-direction: ltr;
-}
-h6 {
-font-size: 11.0PT;
-color: #666666;
-font-style: italic;
-padding-top: 12.0PT;
-padding-bottom: 4.0PT;
-direction: ltr;
-}
-.title {
-font-size: 26.0PT;
-padding-bottom: 3.0PT;
-direction: ltr;
-}
-.subtitle {
-font-family: Arial;
-font-size: 15.0PT;
-color: #666666;
-padding-bottom: 16.0PT;
-direction: ltr;
-}
-
-
-    </style>
 </head>
 <body>
 <header>
+    <div class="site-title-container">
+        <a href="index.html" class="site-title-link">Image Storytelling with GPT-4o</a>
+    </div>
     <div class="hamburger-menu" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -82,346 +19,186 @@ direction: ltr;
     </div>
     <nav>
     <ul>
-        <li><a href="index.html">How do you create consistent stories in images with GPT4o </a></li>
+        <li><a href="index.html">Tutorial Home</a></li>
     </ul>
     </nav>
 </header>
-<div class="content"clear: both; overflow: auto; ">
-<div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 16.0PT; color: #4285f4; '><strong>How do you create consistent stories in images with GPT4o ?
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>GPT4o can now generate pretty good images when given proper instructions.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>However, it’s still hard to get consistent images between successives generations.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>If you need continuity between different images, either in the same chat, or in different windows, here’s a tutorial to get good consistency across different runs.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><ol style="padding-left: 20.0px;"><li><span style='font-family: Roboto; font-size: 14.0PT; color: #4a86e8; '><strong>Storyboard generation
-</strong></span></li></ol><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>For this quick experiment, I’m going to directly ask ChatGPT to create a story.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Several “frameworks” can be used to generate stories (“The Hero With a Thousand Faces”, from Joseph Campbell, “Save the Cat” from Snyder, “The Shape of Stories” from Kurt Vonnegut, etc…).
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Here’s the prompt (I used “o4-mini-high” here):
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Create a compelling story, following the framework "The Hero with a thousand faces", or the one from Vonnegut. I want a series of scenes, like a storyboard. 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '> </span><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Here’s a partial screenshot of the answer:
-</span></p><p class="normal_text" style='direction: ltr; '><img src="img/2e00c7b429e9afd25c85454226fa2ba09c52bfc2.png" style="width: 601.5503622047245px; height: 255.93599999999998px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; '>Full result:</span><span style='font-family: Roboto; '>
-</span></p><table><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Scene
-</strong></span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Stage
-</strong></span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Visual Description
-</strong></span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Key Action / Conflict
-</strong></span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Dialogue / Caption
-</strong></span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>1
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Ordinary World
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>A dusty workshop lit by lanterns. Shelves of half-drawn maps.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Mira</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '>, a young cartographer’s apprentice, traces a faded star map.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><em>Caption:</em></span><span style='font-family: Roboto; font-size: 6.0PT; '> “Every day, I chart lands I’ll never see…”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>2
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Call to Adventure
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>A wizened traveler bursts in, clutching a glowing compass shard.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>He begs Mira: “Only you can restore the Celestial Compass!”
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Traveler:</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '> “Without it, the world will fall to darkness.”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>3
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Refusal
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Mira recoils, sketchbook trembling in her hands.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Fear grips her: she’s never left the safety of the workshop.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Mira (thought):</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '> “I’m no hero—I’m just an apprentice.”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>4
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Meeting the Mentor
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>By moonlight beneath a grand world map, the Traveler teaches Mira basic rites.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>He reveals ancient lore: compass shards are scattered across three realms.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Traveler:</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '> “Your maps will guide you where magic won’t.”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>5
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Crossing the Threshold
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Mira steps through an archway of swirling starlight into a barren desert plain.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>The boundary shakes; her mentor’s voice echoes: “Trust your hand.”
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><em>Caption:</em></span><span style='font-family: Roboto; font-size: 6.0PT; '> “And so my map became my sword…”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>6
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Tests, Allies, Enemies
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Montage of three trials: defeating sand wraiths, befriending a desert fox, solving a living labyrinth of rock.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Mira learns to read the desert’s hidden signs.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Fox (gesture):</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '> Points to a glowing waypoint on her map.
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>7
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Approach to the Inmost Cave
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Night-soaked forest. A massive, gnarled tree pulses with dark energy.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Mira confronts her doubt as the forest whispers her failures.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><em>Caption:</em></span><span style='font-family: Roboto; font-size: 6.0PT; '> “Every step forward echoed my worst fears…”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>8
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Ordeal
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Inside the tree’s hollow, a shadow-twin of Mira emerges, mirror-staring her.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>She must overcome self-doubt to claim the second compass shard.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Shadow-Mira:</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '> “You’re not worthy.”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>9
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Reward (Seizing the Sword)
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>The shadow dissolves; Mira holds the glowing shard aloft, light spilling outward.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Confidence blooms—she’s no longer the timid apprentice.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><em>Caption:</em></span><span style='font-family: Roboto; font-size: 6.0PT; '> “Light follows those brave enough to stand.”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>10
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>The Road Back
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Snowy mountain pass. Ancient golems awaken, chasing her toward the final realm.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>With two shards in hand, she races time to the Temple of Stars.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Mira (panting):</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '> “Just… one… more…”
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>11
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Resurrection
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>At the summit, under a blood-red eclipse, Mira faces the final guardian—a celestial dragon.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>She must sacrifice her only complete map to restore the compass.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><strong>Dragon (roar):</strong></span><span style='font-family: Roboto; font-size: 6.0PT; '> Ember sparks illuminate her map’s sacrifice.
-</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>12
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Return with the Elixir
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>Back in the workshop at dawn, Mira rebuilds her maps—now alive with starlight.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '>The fully restored compass guides ships and scholars worldwide.
-</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 6.0PT; '><em>Caption:</em></span><span style='font-family: Roboto; font-size: 6.0PT; '> “In giving everything, I found my true path.”
-</span></p></td></tr></table><p class="normal_text" style='direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>The story has 12 beats. The pace of the story’s tension is outlined in the following graph (I asked Claude to create a SVG from the table directly). The following prompt was the one used with Claude:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 8.0PT; color: #ffffff; background-color: #000000; '>Here's a table summaruzing the 12 beats of a story : "| Scene | Stage | Visual Description | Key Action / Conflict | Dialogue / Caption | | ----- | --------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------- | | 1 | Ordinary World | A dusty workshop lit by lanterns. Shelves of half-drawn maps. | **Mira**, a young cartographer’s apprentice, traces a faded star map. | *Caption:* “Every day, I chart lands I’ll never see…” | | 2 | Call to Adventure | A wizened traveler bursts in, clutching a glowing compass shard. | He begs Mira: “Only you can restore the Celestial Compass!” | **Traveler:** “Without it, the world will fall to darkness.” | | 3 | Refusal | Mira recoils, sketchbook trembling in her hands. | Fear grips her: she’s never left the safety of the workshop. | **Mira (thought):** “I’m no hero—I’m just an apprentice.” | | 4 | Meeting the Mentor | By moonlight beneath a grand world map, the Traveler teaches Mira basic rites. | He reveals ancient lore: compass shards are scattered across three realms. | **Traveler:** “Your maps will guide you where magic won’t.” | | 5 | Crossing the Threshold | Mira steps through an archway of swirling starlight into a barren desert plain. | The boundary shakes; her mentor’s voice echoes: “Trust your hand.” | *Caption:* “And so my map became my sword…” | | 6 | Tests, Allies, Enemies | Montage of three trials: defeating sand wraiths, befriending a desert fox, solving a living labyrinth of rock. | Mira learns to read the desert’s hidden signs. | **Fox (gesture):** Points to a glowing waypoint on her map. | | 7 | Approach to the Inmost Cave | Night-soaked forest. A massive, gnarled tree pulses with dark energy. | Mira confronts her doubt as the forest whispers her failures. | *Caption:* “Every step forward echoed my worst fears…” | | 8 | Ordeal | Inside the tree’s hollow, a shadow-twin of Mira emerges, mirror-staring her. | She must overcome self-doubt to claim the second compass shard. | **Shadow-Mira:** “You’re not worthy.” | | 9 | Reward (Seizing the Sword) | The shadow dissolves; Mira holds the glowing shard aloft, light spilling outward. | Confidence blooms—she’s no longer the timid apprentice. | *Caption:* “Light follows those brave enough to stand.” | | 10 | The Road Back | Snowy mountain pass. Ancient golems awaken, chasing her toward the final realm. | With two shards in hand, she races time to the Temple of Stars. | **Mira (panting):** “Just… one… more…” | | 11 | Resurrection | At the summit, under a blood-red eclipse, Mira faces the final guardian—a celestial dragon. | She must sacrifice her only complete map to restore the compass. | **Dragon (roar):** Ember sparks illuminate her map’s sacrifice. | | 12 | Return with the Elixir | Back in the workshop at dawn, Mira rebuilds her maps—now alive with starlight. | The fully restored compass guides ships and scholars worldwide. | *Caption:* “In giving everything, I found my true path.” | ". Create an image with an arrow illustrating the pace of the story, its tension, going from left to right, up and down. The prompt used to create this table was : "Create a compelling story, following the framework "The Hero with a thousand faces", or the one from Vonnegut. I want a serie of scenes, like a storyboard.". Create the image. Create a SVG, instead of an image
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 8.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>The resulting SVG, exported as PNG:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/997cc25f45153f1be5f81d12da009303f8be1eb7.png" alt="story_arc.png" style="width: 677.1220157480317px; height: 338.582px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><em>The creation of this graph isn’t needed for the story generation and the image generation. It’s just there for this specific tutorial, to highlight the type of story generated by the LLM.
-</em></span></p><p class="normal_text" style='direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Now, 12 steps isn’t enough to provide a full storyboard.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Let’s ask GPT to split each step in 2 to 4 beats:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>I'm looking to break each of the 12 storyboard scenes into a certain number of smaller beats (for example, 2–4 mini-panels each)</span><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>ChatGPT’s answer:
-</span></p><p class="normal_text" style='direction: ltr; '><span style='background-color: #d9d9d9; '>You’ll want to give each of your 12 key scenes enough “micro-beats” to carry the pace and emotional weight—in practice that’s </span><span style='background-color: #d9d9d9; '><strong>2–4 mini-panels per scene</strong></span><span style='background-color: #d9d9d9; '>, for a total of:
-</span></p><ul style="padding-left: 20.0px;"><li><span style='background-color: #d9d9d9; '><strong>Minimum:</strong></span><span style='background-color: #d9d9d9; '> 12 scenes × 2 beats = </span><span style='background-color: #d9d9d9; '><strong>24 substeps
-</strong></span></li><li><span style='background-color: #d9d9d9; '><strong>Maximum:</strong></span><span style='background-color: #d9d9d9; '> 12 scenes × 4 beats = </span><span style='background-color: #d9d9d9; '><strong>48 substeps
-</strong></span></li><li><span style='background-color: #d9d9d9; '><strong>Sweet-spot (avg 3 beats):</strong></span><span style='background-color: #d9d9d9; '> 12 × 3 = </span><span style='background-color: #d9d9d9; '><strong>36 substeps
-</strong></span></li></ul><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>So now we will have each 12 steps split up into 3 beats.
-</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
-</span></p><table><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 5.0PT; '><strong>Scene #
-</strong></span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 5.0PT; '><strong>Stage
-</strong></span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 5.0PT; '><strong># Beats
-</strong></span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 5.0PT; '><strong>Why?
-</strong></span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>1
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Ordinary World
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Intro beats: establish workshop → Mira’s routine → hint at longing.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>2
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Call to Adventure
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Arrival → plea → Mira’s first flash of resolve.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Refusal
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Shock → fear → almost-action-then-pull-back.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>4
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Meeting the Mentor
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Teach → lore reveal → mentor’s challenge stated.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>5
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Crossing the Threshold
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Threshold door → Mira steps through → immediate trial tease.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>6
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Tests, Allies, Enemies
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>4
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Sand wraith fight → fox ally → labyrinth → map clue.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>7
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Approach to Inmost Cave
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Forest entry → whispers of doubt → Mira steels herself.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>8
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Ordeal
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>2
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Shadow-Mira appears → emotional clash → shard seized.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>9
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Reward
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>2
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Dawn light → shard held high.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>10
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>The Road Back
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Golems awaken → race uphill → near-miss escape.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>11
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Resurrection
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>4
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Summit reveal → dragon confrontation → sacrifice → triumph.
-</span></p></td></tr><tr><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>12
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Return with the Elixir
-</span></p></td><td><p class="normal_text" style='direction: ltr; text-align: center; '><span style='font-size: 8.0PT; '>3
-</span></p></td><td><p class="normal_text" style='direction: ltr; '><span style='font-size: 8.0PT; '>Workshop dawn → maps reborn → world reacts.
-</span></p></td></tr></table><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>The story won’t win any award for originality or even good creativity, but it’s good enough for this tutorial.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>We can now ask ChatGPT to convert those 36 beats to a storyboard sheet.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Each description will be used to generate a starting frame.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '> Now, create a full breakdown of those 36 substeps as a markdown file, with a list of prompts, to generate them with a prompt to video system, following the format in the provided screenshot</span><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Here’s a partial screenshot for the created file:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/eb02df0664fbe01f4647e2aa6fd208a0fedfb2e0.png" style="width: 629.8425px; height: 358.11517322834686px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #4a86e8; '><strong>2. Moodboard creation
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>We need to ask the system to create a moodboard that will be used as a reference for the graphical style. Each time we will ask for a new image, we will also provide the moodboard with the prompt, to steer the image generation in the right direction.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>This will help us maintain a coherent style.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Do a few tries until you get a graphical style matching your intent.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>You can also provide outside images to GPT at this point if you have something very specific in mind.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Now, for the step 1, create an image that is a moodboard/reference that can be given as a reference for future generation with other LLM</span><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/78395cfb06b099bbf6e382a679876c60ce5ec778.png" style="width: 249.205353423622px; height: 249.20535342362203px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Make the drawing style less complex to read</span><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/6d384ae36663baf239fe81d056b4c247cde2df69.png" style="width: 196.96377771338587px; height: 295.448487911811px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Make it more complex, but less than before, use more diverse color palette
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/6df05e643abfe806278784d622da1304647edee6.png" style="width: 250.34822733216754px; height: 375.153095825195px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Add a little bit more diversity to the colors</span><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" style="width: 214.8884334866142px; height: 322.33426242519687px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>We will go with that style! Save the image as “moodboard.jpg”
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #4a86e8; '><strong>3. Image Generation
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Now, the image-by-image generation can start!
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>We will re-use the same pattern all the time:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Create the starting frame for the "1. **Substep 1** - **Subject Introduction:** A young cartographer’s apprentice hunched over parchment - **Primary Action:** Sketches the outline of distant stars - **Camera Instructions:** Static overhead shot focusing on the table - **Lighting & Mood:** Warm lantern glow casting soft highlights 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Environment & Props:** Dusty wooden workshop with scrolls, ink pots, quills - **Artistic Style or Lens:** Shot with a 50 mm prime lens for natural perspective ", using the provided image as a reference for the style
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" style="width: 214.8884334866141px; height: 322.3342624251969px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>The idea is to have a systematic prompt :
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; '><em>
-</em></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; '><em>Create the starting frame for the</em></span><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><em> </em></span><span style='font-family: Roboto; font-size: 14.0PT; color: #6aa84f; '><strong><insert the description of the frame here></strong></span><span style='font-family: Roboto; font-size: 14.0PT; '><em>, using the provided image as a reference for the style. Don’t forget to drag and drop the moodboard into ChatGPT’s prompt window in the webpage!</em></span><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><em> 
-</em></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><em>
-</em></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Result of the generation:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" style="width: 192.75836633700786px; height: 289.13754950551186px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><em>(ChatGPT is adding some of its comments to the generated image):
-</em></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/4c7ba43a59efb71ef5c499b59ff6c74fa249ba2d.png" style="width: 409.19295177165355px; height: 202.5087567441347px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Now, we can iterate, and generate the second image:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Create the starting frame for the " - **Subject Introduction:** Close-up on the apprentice’s hand holding a quill - **Primary Action:** Traces intricate grid lines on the star map - **Camera Instructions:** Tight close-up on hands and parchment - **Lighting & Mood:** Soft amber lamplight with deep shadows - **Environment & Props:** Wooden desk scattered with compass and ruler - **Artistic Style or Lens:** Shot with an 85 mm prime for shallow depth-of-field " make it consistent with the provided previous frame and the provided moodboard</span><span style='font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" style="width: 83.59581812913385px; height: 125.39372719370078px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" style="width: 83.59581812913393px; height: 125.39372719370078px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Here, I’m providing the previous frame with the moodboard, to make the environment coherent. Since the scene is still inside the same house, I want to keep the same objects, colors and placement. Don’t use the previous frame if there is a cut between the scenes (like for example if the previous scene is in the snow, and the next one in the sand).
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Result of the previous generation:
-</span></p><img src="img/ae860b69072762e015a3f016a9ce81b41145c85b.png" style="float: left; width: 261.2027501580094px; height: 391.80412523701415px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>As you can see, it’s pretty consistent.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #4a86e8; '><strong>3.1 Character Sheet
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Consistency for characters is even more important than consistency for the environments.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>To enforce that, we will use a tool from the animation industry: the character sheet. It’s a reference sheet, a turnaround of a character, to see it from all angles. Sometimes you have insets with zoom-in on the face, the hands, or other details.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Some examples:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/988f538e7385ae3ae140c33f1faf281c5ae2548c.png" style="width: 433.6604908375984px; height: 194.22436011437006px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #0097a7; '><a href="https://commons.wikimedia.org/wiki/File:Character_Sintel-model-sheet.png" style="font-size: 14.0PT; color: #0097a7; ">https://commons.wikimedia.org/wiki/File:Character_Sintel-model-sheet.png</a></span><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/2e0ae5cc314c73a012da81be6568e690b2c6425c.png" style="width: 324.7402749448819px; height: 243.5559146929134px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://upload.wikimedia.org/wikipedia/commons/1/18/Fig._Character_Design_Model_Sheet_C_%28cc%29_2017_03.jpg" style="font-size: 14.0PT; color: #1155cc; ">https://upload.wikimedia.org/wikipedia/commons/1/18/Fig._Character_Design_Model_Sheet_C_%28cc%29_2017_03.jpg</a></span><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/bb461d5b41418aa252e4e365f1a42217ebd9f8ed.png" style="width: 316.51604872942846px; height: 140.3420216064447px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #1155cc; '><a href="https://commons.wikimedia.org/wiki/File:1D_model-sheet.png" style="font-size: 14.0PT; color: #1155cc; ">https://commons.wikimedia.org/wiki/File:1D_model-sheet.png</a></span><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Now, we will create a character sheet for the various characters in our story:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '> Create a concept art graphical character sheet for the apprentice
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" style="width: 100.89332994015754px; height: 151.33999491023621px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" style="width: 100.89332994015754px; height: 151.33999491023621px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/d57a264d9cfad852fd1963cf7e1e3fc44f5a21dc.png" style="width: 169.34337955275586px; height: 112.89558636850394px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 18.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>The result:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/bc4bed4fd722e134cbd0705eecf2a423461dbd8f.png" style="width: 138.96962056062995px; height: 208.45443084094487px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Of course, create the various character sheets at the beginning of your project, it will help you get consistency from the start!
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>For the wizard:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Create a concept art graphical character sheet for the wizened traveler
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/01da3fecd801abc77c4ea9e730ecd71e7210024d.png" style="width: 148.03296948242186px; height: 222.0494542236328px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" style="width: 100.89332994015754px; height: 151.33999491023621px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>The result:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/5da39fb54178cf3314fcacbc4f4392347fa05a20.png" style="width: 181.24995177165354px; height: 270.90046555118107px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>To enforce image ratio, you must add them into the prompt.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Indeed,dDuring the generation, if you let ChatGPT on its own, it will generate images with different ratios.
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/b865b3c619f142c664e6e7d91750c8a868323ffb.png" alt="Substep 02.png" style="width: 156.35445961574806px; height: 234.53209247244095px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><img src="img/243743c13b20c0b4a9152e1a36cdf47b4436c71e.png" alt="Substep 05.png" style="width: 234.53168942362205px; height: 234.531689423622px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><img src="img/1c2b959a9dfc7f132aa9b285fd6167a0ed913d71.png" alt="Substep 13.png" style="width: 156.35445961574806px; height: 234.53209247244095px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><img src="img/e484941918fcc213e76b76f7791af92b70056b51.png" alt="Substep 34.png" style="width: 299.57611086614173px; height: 199.7179446425197px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 18.0PT; color: #4a86e8; '><strong>3.2. Image generation
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 18.0PT; color: #4a86e8; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Example:
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Create the starting frame for the " 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '> - **Subject Introduction:** A young cartographer’s apprentice hunched over parchment 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Primary Action:** Sketches the outline of distant stars 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Camera Instructions:** Static overhead shot focusing on the table 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Lighting & Mood:** Warm lantern glow casting soft highlights 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Environment & Props:** Dusty wooden workshop with scrolls, ink pots, quills 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Artistic Style or Lens:** Shot with a 50 mm prime lens for natural perspective&nbsp;&nbsp;" make it consistent with the provided moodboard
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" style="width: 83.59581812913393px; height: 125.39372719370078px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" style="width: 83.59581812913393px; height: 125.39372719370078px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>Example:</span><span style='font-size: 18.0PT; color: #595959; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>Create the starting frame for the " 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '> - **Subject Introduction:** A young cartographer’s apprentice hunched over parchment 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Primary Action:** Sketches the outline of distant stars 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Camera Instructions:** Static overhead shot focusing on the table 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Lighting & Mood:** Warm lantern glow casting soft highlights 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Environment & Props:** Dusty wooden workshop with scrolls, ink pots, quills 
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>- **Artistic Style or Lens:** Shot with a 50 mm prime lens for natural perspective - **Image ratio:** 3/2 image (1536 by 1024)" make it consistent with the provided moodboard
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" style="width: 83.59581812913393px; height: 125.39372719370074px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/1cc1edfd9bf1f0869438925575fb308a239222ad.png" style="width: 145.12377297637795px; height: 96.74756978897636px; margin: 1.5PT 1.5PT 1.5PT 1.5PT; "><span style='color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #4a86e8; '><strong>The final results!
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/a82db7f2ca91828c7a1836f2455122487921aa0b.png" style="width: 677.1220157480317px; height: 381.238px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style='font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><img src="img/2380bdd092bf78a8000458c7392be97207e38f38.png" style="width: 677.1220157480317px; height: 381.238px; margin: 9.0PT 9.0PT 9.0PT 9.0PT; "><span style='font-family: Courier New; font-size: 14.0PT; color: #ffffff; background-color: #000000; '>
-</span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #4a86e8; '><strong>
-</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='font-family: Roboto; font-size: 14.0PT; color: #595959; '>
-</span></p>
-</div><footer>
+<div class="content">
+    <h1>How do you create consistent stories in images with GPT4o?</h1>
+    <p class="text-main-color">GPT4o can now generate pretty good images when given proper instructions.</p>
+    <p class="text-main-color">However, it’s still hard to get consistent images between successive generations.</p>
+    <p class="text-main-color">If you need continuity between different images, either in the same chat, or in different windows, here’s a tutorial to get good consistency across different runs.</p>
+
+    <h2><span class="text-blue-strong">1. Storyboard generation</span></h2>
+    <p class="text-main-color">For this quick experiment, I’m going to directly ask ChatGPT to create a story.</p>
+    <p class="text-main-color">Several “frameworks” can be used to generate stories (“The Hero With a Thousand Faces”, from Joseph Campbell, “Save the Cat” from Snyder, “The Shape of Stories” from Kurt Vonnegut, etc…).</p>
+    <p class="text-main-color">Here’s the prompt (I used “o4-mini-high” here):</p>
+    <div class="prompt-block">Create a compelling story, following the framework "The Hero with a thousand faces", or the one from Vonnegut. I want a series of scenes, like a storyboard.</div>
+    <p class="text-main-color">Here’s a partial screenshot of the answer:</p>
+    <p><img src="img/2e00c7b429e9afd25c85454226fa2ba09c52bfc2.png" alt="Partial screenshot of ChatGPT story generation response" style="width: 601.55px; height: 255.93px;"></p>
+    <p class="text-main-color">Full result:</p>
+    <table class="table-small-font">
+        <thead>
+            <tr>
+                <th>Scene</th>
+                <th>Stage</th>
+                <th>Visual Description</th>
+                <th>Key Action / Conflict</th>
+                <th>Dialogue / Caption</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Ordinary World</td><td>A dusty workshop lit by lanterns. Shelves of half-drawn maps.</td><td><strong>Mira</strong>, a young cartographer’s apprentice, traces a faded star map.</td><td><em>Caption:</em> “Every day, I chart lands I’ll never see…”</td></tr>
+            <tr><td>2</td><td>Call to Adventure</td><td>A wizened traveler bursts in, clutching a glowing compass shard.</td><td>He begs Mira: “Only you can restore the Celestial Compass!”</td><td><strong>Traveler:</strong> “Without it, the world will fall to darkness.”</td></tr>
+            <tr><td>3</td><td>Refusal</td><td>Mira recoils, sketchbook trembling in her hands.</td><td>Fear grips her: she’s never left the safety of the workshop.</td><td><strong>Mira (thought):</strong> “I’m no hero—I’m just an apprentice.”</td></tr>
+            <tr><td>4</td><td>Meeting the Mentor</td><td>By moonlight beneath a grand world map, the Traveler teaches Mira basic rites.</td><td>He reveals ancient lore: compass shards are scattered across three realms.</td><td><strong>Traveler:</strong> “Your maps will guide you where magic won’t.”</td></tr>
+            <tr><td>5</td><td>Crossing the Threshold</td><td>Mira steps through an archway of swirling starlight into a barren desert plain.</td><td>The boundary shakes; her mentor’s voice echoes: “Trust your hand.”</td><td><em>Caption:</em> “And so my map became my sword…”</td></tr>
+            <tr><td>6</td><td>Tests, Allies, Enemies</td><td>Montage of three trials: defeating sand wraiths, befriending a desert fox, solving a living labyrinth of rock.</td><td>Mira learns to read the desert’s hidden signs.</td><td><strong>Fox (gesture):</strong> Points to a glowing waypoint on her map.</td></tr>
+            <tr><td>7</td><td>Approach to the Inmost Cave</td><td>Night-soaked forest. A massive, gnarled tree pulses with dark energy.</td><td>Mira confronts her doubt as the forest whispers her failures.</td><td><em>Caption:</em> “Every step forward echoed my worst fears…”</td></tr>
+            <tr><td>8</td><td>Ordeal</td><td>Inside the tree’s hollow, a shadow-twin of Mira emerges, mirror-staring her.</td><td>She must overcome self-doubt to claim the second compass shard.</td><td><strong>Shadow-Mira:</strong> “You’re not worthy.”</td></tr>
+            <tr><td>9</td><td>Reward (Seizing the Sword)</td><td>The shadow dissolves; Mira holds the glowing shard aloft, light spilling outward.</td><td>Confidence blooms—she’s no longer the timid apprentice.</td><td><em>Caption:</em> “Light follows those brave enough to stand.”</td></tr>
+            <tr><td>10</td><td>The Road Back</td><td>Snowy mountain pass. Ancient golems awaken, chasing her toward the final realm.</td><td>With two shards in hand, she races time to the Temple of Stars.</td><td><strong>Mira (panting):</strong> “Just… one… more…”</td></tr>
+            <tr><td>11</td><td>Resurrection</td><td>At the summit, under a blood-red eclipse, Mira faces the final guardian—a celestial dragon.</td><td>She must sacrifice her only complete map to restore the compass.</td><td><strong>Dragon (roar):</strong> Ember sparks illuminate her map’s sacrifice.</td></tr>
+            <tr><td>12</td><td>Return with the Elixir</td><td>Back in the workshop at dawn, Mira rebuilds her maps—now alive with starlight.</td><td>The fully restored compass guides ships and scholars worldwide.</td><td><em>Caption:</em> “In giving everything, I found my true path.”</td></tr>
+        </tbody>
+    </table>
+    <p class="text-main-color">The story has 12 beats. The pace of the story’s tension is outlined in the following graph (I asked Claude to create a SVG from the table directly). The following prompt was the one used with Claude:</p>
+    <div class="prompt-block" style="font-size: 0.8em;">Here's a table summaruzing the 12 beats of a story : "| Scene | Stage | Visual Description | Key Action / Conflict | Dialogue / Caption | | ----- | --------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------- | | 1 | Ordinary World | A dusty workshop lit by lanterns. Shelves of half-drawn maps. | **Mira**, a young cartographer’s apprentice, traces a faded star map. | *Caption:* “Every day, I chart lands I’ll never see…” | | 2 | Call to Adventure | A wizened traveler bursts in, clutching a glowing compass shard. | He begs Mira: “Only you can restore the Celestial Compass!” | **Traveler:** “Without it, the world will fall to darkness.” | | 3 | Refusal | Mira recoils, sketchbook trembling in her hands. | Fear grips her: she’s never left the safety of the workshop. | **Mira (thought):** “I’m no hero—I’m just an apprentice.” | | 4 | Meeting the Mentor | By moonlight beneath a grand world map, the Traveler teaches Mira basic rites. | He reveals ancient lore: compass shards are scattered across three realms. | **Traveler:** “Your maps will guide you where magic won’t.” | | 5 | Crossing the Threshold | Mira steps through an archway of swirling starlight into a barren desert plain. | The boundary shakes; her mentor’s voice echoes: “Trust your hand.” | *Caption:* “And so my map became my sword…” | | 6 | Tests, Allies, Enemies | Montage of three trials: defeating sand wraiths, befriending a desert fox, solving a living labyrinth of rock. | Mira learns to read the desert’s hidden signs. | **Fox (gesture):** Points to a glowing waypoint on her map. | | 7 | Approach to the Inmost Cave | Night-soaked forest. A massive, gnarled tree pulses with dark energy. | Mira confronts her doubt as the forest whispers her failures. | *Caption:* “Every step forward echoed my worst fears…” | | 8 | Ordeal | Inside the tree’s hollow, a shadow-twin of Mira emerges, mirror-staring her. | She must overcome self-doubt to claim the second compass shard. | **Shadow-Mira:** “You’re not worthy.” | | 9 | Reward (Seizing the Sword) | The shadow dissolves; Mira holds the glowing shard aloft, light spilling outward. | Confidence blooms—she’s no longer the timid apprentice. | *Caption:* “Light follows those brave enough to stand.” | | 10 | The Road Back | Snowy mountain pass. Ancient golems awaken, chasing her toward the final realm. | With two shards in hand, she races time to the Temple of Stars. | **Mira (panting):** “Just… one… more…” | | 11 | Resurrection | At the summit, under a blood-red eclipse, Mira faces the final guardian—a celestial dragon. | She must sacrifice her only complete map to restore the compass. | **Dragon (roar):** Ember sparks illuminate her map’s sacrifice. | | 12 | Return with the Elixir | Back in the workshop at dawn, Mira rebuilds her maps—now alive with starlight. | The fully restored compass guides ships and scholars worldwide. | *Caption:* “In giving everything, I found my true path.” | ". Create an image with an arrow illustrating the pace of the story, its tension, going from left to right, up and down. The prompt used to create this table was : "Create a compelling story, following the framework "The Hero with a thousand faces", or the one from Vonnegut. I want a serie of scenes, like a storyboard.". Create the image. Create a SVG, instead of an image</div>
+    <p class="text-main-color">The resulting SVG, exported as PNG:</p>
+    <p><img src="img/997cc25f45153f1be5f81d12da009303f8be1eb7.png" alt="Story arc graph showing tension across 12 beats" style="width: 677.12px; height: 338.58px;"></p>
+    <p class="note-italic">The creation of this graph isn’t needed for the story generation and the image generation. It’s just there for this specific tutorial, to highlight the type of story generated by the LLM.</p>
+    <p class="text-main-color">Now, 12 steps isn’t enough to provide a full storyboard.</p>
+    <p class="text-main-color">Let’s ask GPT to split each step in 2 to 4 beats:</p>
+    <div class="prompt-block">I'm looking to break each of the 12 storyboard scenes into a certain number of smaller beats (for example, 2–4 mini-panels each)</div>
+    <p class="text-main-color">ChatGPT’s answer:</p>
+    <div class="substep-explanation">
+        <p>You’ll want to give each of your 12 key scenes enough “micro-beats” to carry the pace and emotional weight—in practice that’s <strong>2–4 mini-panels per scene</strong>, for a total of:</p>
+        <ul>
+            <li><strong>Minimum:</strong> 12 scenes × 2 beats = <strong>24 substeps</strong></li>
+            <li><strong>Maximum:</strong> 12 scenes × 4 beats = <strong>48 substeps</strong></li>
+            <li><strong>Sweet-spot (avg 3 beats):</strong> 12 × 3 = <strong>36 substeps</strong></li>
+        </ul>
+    </div>
+    <p class="text-main-color">So now we will have each 12 steps split up into 3 beats.</p>
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center;">Scene #</th>
+                <th>Stage</th>
+                <th style="text-align: center;"># Beats</th>
+                <th>Why?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="text-align: center;">1</td><td>Ordinary World</td><td style="text-align: center;">3</td><td>Intro beats: establish workshop → Mira’s routine → hint at longing.</td></tr>
+            <tr><td style="text-align: center;">2</td><td>Call to Adventure</td><td style="text-align: center;">3</td><td>Arrival → plea → Mira’s first flash of resolve.</td></tr>
+            <tr><td style="text-align: center;">3</td><td>Refusal</td><td style="text-align: center;">3</td><td>Shock → fear → almost-action-then-pull-back.</td></tr>
+            <tr><td style="text-align: center;">4</td><td>Meeting the Mentor</td><td style="text-align: center;">3</td><td>Teach → lore reveal → mentor’s challenge stated.</td></tr>
+            <tr><td style="text-align: center;">5</td><td>Crossing the Threshold</td><td style="text-align: center;">3</td><td>Threshold door → Mira steps through → immediate trial tease.</td></tr>
+            <tr><td style="text-align: center;">6</td><td>Tests, Allies, Enemies</td><td style="text-align: center;">4</td><td>Sand wraith fight → fox ally → labyrinth → map clue.</td></tr>
+            <tr><td style="text-align: center;">7</td><td>Approach to Inmost Cave</td><td style="text-align: center;">3</td><td>Forest entry → whispers of doubt → Mira steels herself.</td></tr>
+            <tr><td style="text-align: center;">8</td><td>Ordeal</td><td style="text-align: center;">2</td><td>Shadow-Mira appears → emotional clash → shard seized.</td></tr>
+            <tr><td style="text-align: center;">9</td><td>Reward</td><td style="text-align: center;">2</td><td>Dawn light → shard held high.</td></tr>
+            <tr><td style="text-align: center;">10</td><td>The Road Back</td><td style="text-align: center;">3</td><td>Golems awaken → race uphill → near-miss escape.</td></tr>
+            <tr><td style="text-align: center;">11</td><td>Resurrection</td><td style="text-align: center;">4</td><td>Summit reveal → dragon confrontation → sacrifice → triumph.</td></tr>
+            <tr><td style="text-align: center;">12</td><td>Return with the Elixir</td><td style="text-align: center;">3</td><td>Workshop dawn → maps reborn → world reacts.</td></tr>
+        </tbody>
+    </table>
+    <p class="text-main-color">The story won’t win any award for originality or even good creativity, but it’s good enough for this tutorial.</p>
+    <p class="text-main-color">We can now ask ChatGPT to convert those 36 beats to a storyboard sheet.</p>
+    <p class="text-main-color">Each description will be used to generate a starting frame.</p>
+    <div class="prompt-block">Now, create a full breakdown of those 36 substeps as a markdown file, with a list of prompts, to generate them with a prompt to video system, following the format in the provided screenshot</div>
+    <p class="text-main-color">Here’s a partial screenshot for the created file:</p>
+    <p><img src="img/eb02df0664fbe01f4647e2aa6fd208a0fedfb2e0.png" alt="Partial screenshot of markdown file with substeps" style="width: 629.84px; height: 358.11px;"></p>
+
+    <h2><span class="text-blue-strong">2. Moodboard creation</span></h2>
+    <p class="text-main-color">We need to ask the system to create a moodboard that will be used as a reference for the graphical style. Each time we will ask for a new image, we will also provide the moodboard with the prompt, to steer the image generation in the right direction.</p>
+    <p class="text-main-color">This will help us maintain a coherent style.</p>
+    <p class="text-main-color">Do a few tries until you get a graphical style matching your intent.</p>
+    <p class="text-main-color">You can also provide outside images to GPT at this point if you have something very specific in mind.</p>
+    <div class="prompt-block">Now, for the step 1, create an image that is a moodboard/reference that can be given as a reference for future generation with other LLM</div>
+    <p><img src="img/78395cfb06b099bbf6e382a679876c60ce5ec778.png" alt="First moodboard attempt" style="width: 249.20px; height: 249.20px;"></p>
+    <div class="prompt-block">Make the drawing style less complex to read</div>
+    <p><img src="img/6d384ae36663baf239fe81d056b4c247cde2df69.png" alt="Second moodboard attempt, less complex" style="width: 196.96px; height: 295.44px;"></p>
+    <div class="prompt-block">Make it more complex, but less than before, use more diverse color palette</div>
+    <p><img src="img/6df05e643abfe806278784d622da1304647edee6.png" alt="Third moodboard attempt, more complex with diverse colors" style="width: 250.34px; height: 375.15px;"></p>
+    <div class="prompt-block">Add a little bit more diversity to the colors</div>
+    <p><img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" alt="Final moodboard style" style="width: 214.88px; height: 322.33px;"></p>
+    <p class="text-main-color">We will go with that style! Save the image as “moodboard.jpg”</p>
+
+    <h2><span class="text-blue-strong">3. Image Generation</span></h2>
+    <p class="text-main-color">Now, the image-by-image generation can start!</p>
+    <p class="text-main-color">We will re-use the same pattern all the time:</p>
+    <div class="prompt-block">Create the starting frame for the " 1. **Substep 1**  - **Subject Introduction:** A young cartographer’s apprentice hunched over parchment  - **Primary Action:** Sketches the outline of distant stars  - **Camera Instructions:** Static overhead shot focusing on the table  - **Lighting & Mood:** Warm lantern glow casting soft highlights - **Environment & Props:** Dusty wooden workshop with scrolls, ink pots, quills  - **Artistic Style or Lens:** Shot with a 50 mm prime lens for natural perspective ", using the provided image as a reference for the style <img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" alt="Moodboard reference for prompt" class="image-inline" style="width: 100px; height: auto;"></div>
+    <p class="text-main-color">The idea is to have a systematic prompt :</p>
+    <p class="note-italic"><em>Create the starting frame for the</em> <strong style="color: #6aa84f;">&lt;insert the description of the frame here&gt;</strong><em>, using the provided image as a reference for the style. Don’t forget to drag and drop the moodboard into ChatGPT’s prompt window in the webpage!</em></p>
+    <p class="text-main-color">Result of the generation:</p>
+    <p><img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" alt="First generated frame" style="width: 192.75px; height: 289.13px;"></p>
+    <p class="note-italic">(ChatGPT is adding some of its comments to the generated image):</p>
+    <p><img src="img/4c7ba43a59efb71ef5c499b59ff6c74fa249ba2d.png" alt="ChatGPT comments on generated image" style="width: 409.19px; height: 202.50px; margin: 9px;"></p>
+    <p class="text-main-color">Now, we can iterate, and generate the second image:</p>
+    <div class="prompt-block">Create the starting frame for the " - **Subject Introduction:** Close-up on the apprentice’s hand holding a quill - **Primary Action:** Traces intricate grid lines on the star map - **Camera Instructions:** Tight close-up on hands and parchment - **Lighting & Mood:** Soft amber lamplight with deep shadows - **Environment & Props:** Wooden desk scattered with compass and ruler - **Artistic Style or Lens:** Shot with an 85 mm prime for shallow depth-of-field " make it consistent with the provided previous frame and the provided moodboard <img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" alt="Previous frame reference" class="image-inline" style="width: 83.59px; height: auto;"> <img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" alt="Moodboard reference" class="image-inline" style="width: 83.59px; height: auto;"></div>
+    <p class="text-main-color">Here, I’m providing the previous frame with the moodboard, to make the environment coherent. Since the scene is still inside the same house, I want to keep the same objects, colors and placement. Don’t use the previous frame if there is a cut between the scenes (like for example if the previous scene is in the snow, and the next one in the sand).</p>
+    <p class="text-main-color">Result of the previous generation:</p>
+    <div style="overflow: auto;"> <!-- Clearfix for floated image -->
+        <img src="img/ae860b69072762e015a3f016a9ce81b41145c85b.png" alt="Second generated frame, consistent with first" style="float: left; width: 261.20px; height: 391.80px; margin-right: 15px; margin-bottom: 10px;">
+        <p class="text-main-color">As you can see, it’s pretty consistent.</p>
+    </div>
+
+    <h3><span class="text-blue-strong">3.1 Character Sheet</span></h3>
+    <p class="text-main-color">Consistency for characters is even more important than consistency for the environments.</p>
+    <p class="text-main-color">To enforce that, we will use a tool from the animation industry: the character sheet. It’s a reference sheet, a turnaround of a character, to see it from all angles. Sometimes you have insets with zoom-in on the face, the hands, or other details.</p>
+    <p class="text-main-color">Some examples:</p>
+    <p><img src="img/988f538e7385ae3ae140c33f1faf281c5ae2548c.png" alt="Sintel character sheet example" style="width: 433.66px; height: 194.22px;"></p>
+    <p><a href="https://commons.wikimedia.org/wiki/File:Character_Sintel-model-sheet.png">https://commons.wikimedia.org/wiki/File:Character_Sintel-model-sheet.png</a></p>
+    <p><img src="img/2e0ae5cc314c73a012da81be6568e690b2c6425c.png" alt="Character design model sheet example" style="width: 324.74px; height: 243.55px;"></p>
+    <p><a href="https://upload.wikimedia.org/wikipedia/commons/1/18/Fig._Character_Design_Model_Sheet_C_%28cc%29_2017_03.jpg">https://upload.wikimedia.org/wikipedia/commons/1/18/Fig._Character_Design_Model_Sheet_C_%28cc%29_2017_03.jpg</a></p>
+    <p><img src="img/bb461d5b41418aa252e4e365f1a42217ebd9f8ed.png" alt="1D model sheet example" style="width: 316.51px; height: 140.34px;"></p>
+    <p><a href="https://commons.wikimedia.org/wiki/File:1D_model-sheet.png">https://commons.wikimedia.org/wiki/File:1D_model-sheet.png</a></p>
+    <p class="text-main-color">Now, we will create a character sheet for the various characters in our story:</p>
+    <div class="prompt-block">Create a concept art graphical character sheet for the apprentice <img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" alt="Apprentice reference from frame 1" class="image-inline" style="width: 100.89px;"> <img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" alt="Moodboard reference" class="image-inline" style="width: 100.89px;"> <img src="img/d57a264d9cfad852fd1963cf7e1e3fc44f5a21dc.png" alt="Another character reference image" class="image-inline" style="width: 169.34px;"></div>
+    <p class="text-main-color">The result:</p>
+    <p><img src="img/bc4bed4fd722e134cbd0705eecf2a423461dbd8f.png" alt="Character sheet for the apprentice" style="width: 138.96px; height: 208.45px;"></p>
+    <p class="text-main-color">Of course, create the various character sheets at the beginning of your project, it will help you get consistency from the start!</p>
+    <p class="text-main-color">For the wizard:</p>
+    <div class="prompt-block">Create a concept art graphical character sheet for the wizened traveler <img src="img/01da3fecd801abc77c4ea9e730ecd71e7210024d.png" alt="Wizard reference image" class="image-inline" style="width: 148.03px;"> <img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" alt="Moodboard reference" class="image-inline" style="width: 100.89px;"></div>
+    <p class="text-main-color">The result:</p>
+    <p><img src="img/5da39fb54178cf3314fcacbc4f4392347fa05a20.png" alt="Character sheet for the wizened traveler" style="width: 181.24px; height: 270.90px;"></p>
+    <p class="text-main-color">To enforce image ratio, you must add them into the prompt.</p>
+    <p class="text-main-color">Indeed, during the generation, if you let ChatGPT on its own, it will generate images with different ratios.</p>
+    <p>
+        <img src="img/b865b3c619f142c664e6e7d91750c8a868323ffb.png" alt="Substep 02 image with specific ratio" class="image-inline" style="width: 156.35px;">
+        <img src="img/243743c13b20c0b4a9152e1a36cdf47b4436c71e.png" alt="Substep 05 image with square ratio" class="image-inline" style="width: 234.53px;">
+        <img src="img/1c2b959a9dfc7f132aa9b285fd6167a0ed913d71.png" alt="Substep 13 image with portrait ratio" class="image-inline" style="width: 156.35px;">
+        <img src="img/e484941918fcc213e76b76f7791af92b70056b51.png" alt="Substep 34 image with landscape ratio" class="image-inline" style="width: 299.57px;">
+    </p>
+
+    <h3><span class="text-blue-strong">3.2. Image generation (with ratio)</span></h3>
+    <p class="text-main-color">Example:</p>
+    <div class="prompt-block">Create the starting frame for the "
+ - **Subject Introduction:** A young cartographer’s apprentice hunched over parchment
+ - **Primary Action:** Sketches the outline of distant stars
+ - **Camera Instructions:** Static overhead shot focusing on the table
+ - **Lighting & Mood:** Warm lantern glow casting soft highlights
+ - **Environment & Props:** Dusty wooden workshop with scrolls, ink pots, quills
+ - **Artistic Style or Lens:** Shot with a 50 mm prime lens for natural perspective&nbsp;&nbsp;" make it consistent with the provided moodboard <img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" alt="Moodboard reference" class="image-inline" style="width: 83.59px;"> <img src="img/6fe8a6795fff1e095c9eb677de1b140312798c3d.png" alt="Previous frame reference" class="image-inline" style="width: 83.59px;">
+</div>
+    <p class="text-main-color">Example with image ratio specified:</p>
+    <div class="prompt-block">Create the starting frame for the "
+ - **Subject Introduction:** A young cartographer’s apprentice hunched over parchment
+ - **Primary Action:** Sketches the outline of distant stars
+ - **Camera Instructions:** Static overhead shot focusing on the table
+ - **Lighting & Mood:** Warm lantern glow casting soft highlights
+ - **Environment & Props:** Dusty wooden workshop with scrolls, ink pots, quills
+ - **Artistic Style or Lens:** Shot with a 50 mm prime lens for natural perspective  - **Image ratio:** 3/2 image (1536 by 1024)" make it consistent with the provided moodboard <img src="img/31e4a5dabb991d84f61d0baae52832fb8b809dc5.png" alt="Moodboard reference" class="image-inline" style="width: 83.59px;">
+    <p><img src="img/1cc1edfd9bf1f0869438925575fb308a239222ad.png" alt="Image generated with 3/2 ratio" style="width: 145.12px; height: 96.74px; margin-top:10px;"></p>
+    </div>
+
+    <h2><span class="text-blue-strong">The final results!</span></h2>
+    <p><img src="img/a82db7f2ca91828c7a1836f2455122487921aa0b.png" alt="Collage of final generated images - set 1" style="width: 677.12px; height: 381.23px; margin: 9px auto; display:block;"></p>
+    <p><img src="img/2380bdd092bf78a8000458c7392be97207e38f38.png" alt="Collage of final generated images - set 2" style="width: 677.12px; height: 381.23px; margin: 9px auto; display:block;"></p>
+</div>
+<footer>
     Created for free by
     <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
     Convert Google Docs files to full fledged websites <b>for free</b>.
@@ -432,6 +209,8 @@ function toggleMenu() {
     header.classList.toggle('nav-active');
 }
 
+// Keep existing submenu JS if needed for future multi-level navigation,
+// but for the current single link, it's not strictly necessary.
 function toggleSubmenu(event, submenuId) {
     var submenu = document.getElementById(submenuId);
     var parentLi = submenu.parentElement;
